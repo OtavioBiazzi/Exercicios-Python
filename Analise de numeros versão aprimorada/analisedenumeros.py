@@ -1,4 +1,4 @@
-print("Programa Impar ou Par")
+print("Programa Analise de Números (Versão Aprimorada)")
 par = 0
 impar = 0
 i = 1
