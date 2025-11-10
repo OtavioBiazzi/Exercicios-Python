@@ -15,20 +15,20 @@ while i < 16:
         i += 1
         continue
 
+numeros_lista.sort()  #sort serve pra deixar em ordem crescente
 maior = max(numeros_lista)
 menor = min(numeros_lista)
-numeros_lista.sort()  #sort serve pra deixar em ordem crescente
-print("\nLista em ordem crescente:")
-print(numeros_lista) 
-
+soma = sum(numeros_lista)
 for numero in numeros_lista:
     if numero % 2 == 0:
         par += 1
     else:
         impar += 1
-
-print("\nQuantidade de números pares: ", par)
-print("Quantidade de números ímpares: ", impar)
+        
+print("\nLista em ordem crescente:", numeros_lista)
 print("O maior número da lista é: ", maior)
 print("O menor número da lista é: ", menor)
+print("A soma dos números da lista é: ", soma)
+print("\nQuantidade de números pares: ", par)
+print("Quantidade de números ímpares: ", impar)
 input()
