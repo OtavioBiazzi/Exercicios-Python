@@ -19,6 +19,7 @@ numeros_lista.sort()  #sort serve pra deixar em ordem crescente
 maior = max(numeros_lista)
 menor = min(numeros_lista)
 soma = sum(numeros_lista)
+media = soma/15
 for numero in numeros_lista:
     if numero % 2 == 0:
         par += 1
@@ -26,9 +27,10 @@ for numero in numeros_lista:
         impar += 1
         
 print("\nLista em ordem crescente:", numeros_lista)
-print("O maior número da lista é: ", maior)
+print("\nO maior número da lista é: ", maior)
 print("O menor número da lista é: ", menor)
-print("A soma dos números da lista é: ", soma)
+print("\nA soma dos números da lista é: ", soma)
+print("A média dos números da lista é: ", media)
 print("\nQuantidade de números pares: ", par)
 print("Quantidade de números ímpares: ", impar)
 input()
