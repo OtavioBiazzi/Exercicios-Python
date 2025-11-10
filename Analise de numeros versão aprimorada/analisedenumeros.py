@@ -15,6 +15,8 @@ while i < 16:
         i += 1
         continue
 
+maior = max(numeros_lista)
+menor = min(numeros_lista)
 numeros_lista.sort()  #sort serve pra deixar em ordem crescente
 print("\nLista em ordem crescente:")
 print(numeros_lista) 
@@ -27,4 +29,6 @@ for numero in numeros_lista:
 
 print("\nQuantidade de números pares: ", par)
 print("Quantidade de números ímpares: ", impar)
+print("O maior número da lista é: ", maior)
+print("O menor número da lista é: ", menor)
 input()
