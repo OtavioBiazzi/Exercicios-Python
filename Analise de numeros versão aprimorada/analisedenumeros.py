@@ -1,11 +1,19 @@
 print("Programa Impar ou Par")
 par = 0
 impar = 0
+i = 1
 numeros_lista = []
 
-for i in range (15):
-    numeros = int(input(f"Digite o número {i+1}º número: "))
-    numeros_lista.append(numeros)
+while i < 16:
+    numeros = int(input(f"Digite o número {i}º número: "))
+    if numeros in numeros_lista:
+        print("Voce digitou um número repetido, tente novamente!")
+        input("Aperte (Enter) para continuar")
+        continue
+    else:
+        numeros_lista.append(numeros)
+        i += 1
+        continue
 
 numeros_lista.sort()  #sort serve pra deixar em ordem crescente
 print("\nLista em ordem crescente:")
